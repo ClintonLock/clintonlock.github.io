@@ -23,7 +23,7 @@
 			var xmlDoc = xmlhttp.responseXML.documentElement;
 			removeWhitespace(xmlDoc);
 			var outputResult = document.getElementById("BodyRows");
-			var rowData = xmlDoc.getElementsByTagName("ENTITY");
+			var rowData = xmlDoc.getElementsByTagName("ALIAS_NAME");
 
 			addTableRowsFromXmlDoc(rowData,outputResult);
 		}
